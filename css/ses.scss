@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Life+Savers:400,700');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap');
+$boja:#fff;
+$font:'Life Savers', cursive;
+@mixin flexr{
+    display: flex;
+    flex-direction: row;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 13px;
+    }
+::-webkit-scrollbar-thumb {
+        background: rgb(146, 74, 137); 
+        border-radius: 13px;
+    }
+::-webkit-scrollbar-thumb:hover {
+        background: #e784dac4; 
+    }
+body{
+    font-family: $font;
+    color:$boja;
+    }
+#header {
+    width: 100%;
+    z-index: +1;
+    position: absolute;
+         h1, ul, a {
+        padding: 10px;
+        color: $boja;
+        }
+        h1 {
+            float: left;
+            font-size: 40px;
+        }
+        a {
+            font-size: 30px;
+            text-decoration: none;
+        }
+        ul {
+            list-style-type: none;
+            @include flexr;
+            justify-content:flex-end;
+            float: right;
+        
+        }
+        h1, a{
+            &:hover {
+                color:#000;
+                transition: 1s ease;}
+        }
+        nav{
+            display: inline;
+        }
+}
+.cleaner {
+	clear: both;
+}
+#slika {
+	background: {
+        image: url('../images/bgog1.jpg');
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+	box-sizing: border-box;
+	min-height: 750px;
+    position: relative;
+    width: 100%;
+    h1{
+    font-size: 90px;
+	padding-bottom: 7px;
+    }
+    h2{
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+    #slikaTekst {
+    
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        text-align: center;
+        color:$boja;
+        display: flex;
+        justify-content:space-around;
+    }
+}
+#skills {
+	width: 100%;
+    background-color: rgba(117, 11, 100, 0.664);
+    padding:{
+        top:30px;
+        bottom: 40px;
+    }
+    h2, h4{
+    text-align: center;
+    }
+    h2{
+        padding-top: 30px;
+        font-size: 35px;
+    }
+    h4{
+        font-size: 28px;
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+    }
+    #headskill{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        
+        h1{
+        font-size: 45px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.548);
+        }
+        h3{
+        font-size: 30px;
+        padding-top: 8px;
+        text-align: center;
+        }
+    
+    }
+    .coskill {
+        width: 100%;
+        @include flexr;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding: 20px;
+        margin: opx auto;
+        align-items: center;
+    }
+    .com{
+        background-color: rgba(255, 255, 255, 0.322);
+        border-radius: 50%;
+        padding: 30px;
+        margin: 10px;
+        box-shadow: 13px 14px 17px 0px rgba(46, 44, 44, 0.34);
+        opacity: 1;
+        &:hover{
+            opacity: 0.7;
+        }
+        h3{
+            font-size: 22px;
+        }
+    }
+}
+#projects {
+    padding-top: 70px;
+    padding-bottom: 70px;
+	max-width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: rgba(180, 180, 180, 0.89);
+    
+    #textp {
+        padding: 30px;
+        font-size: 35px;
+    }
+    .picture {
+        padding: 20px;
+        width: 30%;
+        height: 80%;
+        @include flexr;
+    }
+    .img {
+        box-shadow: -12px 13px 15px 0px rgba(0,0,0,0.75);
+        height: 230px;
+	width: 450px;
+        &:hover{
+            opacity: 0.65;
+        }
+    }  
+}
+#me{
+    background: {
+        image: linear-gradient(rgba(180, 180, 180, 0.89), rgba(117, 11, 100, 0.664));
+        size: cover;
+    }
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    @include flexr;
+    padding: 100px;
+    width: 100%;
+    justify-content: space-around;
+	
+#profile{
+    width:30%;
+    img{
+        width:100%;
+        border-radius: 50%;
+        }
+    }
+    #about{
+	width:60%;
+	text-align: center;
+    h2{
+        padding-bottom: 10px;
+        font: {
+            size: 39px;
+            weight: bold; 
+        }
+    }
+    p{
+        font-size: 26px;
+        text-align: justify;
+        padding: 30px;
+        border-top: 4px solid rgba(255, 255, 255, 0.548);
+        border-bottom: 4px solid rgba(255, 255, 255, 0.548);
+    }
+    #cv{
+        padding: 30px;
+        background-color: rgb(255, 255, 255);
+        font-size: 40px;
+        border: none;
+        border-radius: 25px;
+        &:hover{
+            color: #ffffff;
+            background-color: #6b6b6b;
+        }
+        a{
+            text-decoration:none;
+            color: rgb(63, 59, 65);
+            transition-duration: 0.4s;
+            
+        }
+        
+        
+    }
+}
+}
+#quote{
+    width: 100%;
+    min-height: 500px;
+    background: {
+        image: url('../images/quote1.jpg');
+        size: cover;
+        attachment: fixed;
+    }
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        padding: 20px;
+        font: {
+            family: 'Sawarabi Mincho', sans-serif;
+            size: 70px;
+        }
+        }
+    h2{
+        font-size: 50px;
+    }
+}
+#footer {
+	background-image: linear-gradient(#262626, #000000);
+	font-size: 28px;
+	padding: 20px 0px;
+    width: 100%;
+    color: rgb(171, 192, 192);
+    text:{
+        decoration:none;
+        align: center;
+    }
+    a{
+        
+        color: rgb(171, 192, 192);
+        text-decoration: none;
+    }
+    .fa{
+        padding: 19px;
+        font-size: 35px;
+        &:hover{
+            color: #633c56;
+        }
+    }
+    .fa fa-envelope{
+        padding: 0px;
+    }
+    
+    li{
+		display: inline-block;
+    }
+}

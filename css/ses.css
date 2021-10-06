@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=Life+Savers:400,700");
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #924a89;
+  border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e784dac4;
+}
+
+body {
+  font-family: "Life Savers", cursive;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  z-index: +1;
+  position: absolute;
+}
+
+#header h1, #header ul, #header a {
+  padding: 10px;
+  color: #fff;
+}
+
+#header h1 {
+  float: left;
+  font-size: 40px;
+}
+
+#header a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  float: right;
+}
+
+#header h1:hover, #header a:hover {
+  color: #000;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#header nav {
+  display: inline;
+}
+
+.cleaner {
+  clear: both;
+}
+
+#slika {
+  background-image: url("../images/bgog1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 750px;
+  position: relative;
+  width: 100%;
+}
+
+#slika h1 {
+  font-size: 90px;
+  padding-bottom: 7px;
+}
+
+#slika h2 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+#slika #slikaTekst {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#skills {
+  width: 100%;
+  background-color: rgba(117, 11, 100, 0.664);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#skills h2, #skills h4 {
+  text-align: center;
+}
+
+#skills h2 {
+  padding-top: 30px;
+  font-size: 35px;
+}
+
+#skills h4 {
+  font-size: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#skills #headskill {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #headskill h1 {
+  font-size: 45px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.548);
+}
+
+#skills #headskill h3 {
+  font-size: 30px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+#skills .coskill {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  margin: opx auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills .com {
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 50%;
+  padding: 30px;
+  margin: 10px;
+  -webkit-box-shadow: 13px 14px 17px 0px rgba(46, 44, 44, 0.34);
+          box-shadow: 13px 14px 17px 0px rgba(46, 44, 44, 0.34);
+  opacity: 1;
+}
+
+#skills .com:hover {
+  opacity: 0.7;
+}
+
+#skills .com h3 {
+  font-size: 22px;
+}
+
+#projects {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: rgba(180, 180, 180, 0.89);
+  
+}
+
+#projects #textp {
+  padding: 30px;
+  font-size: 35px;
+}
+
+#projects .picture {
+  padding: 20px;
+  width: 30%;
+  height: 80%;
+}
+
+#projects .img {
+  -webkit-box-shadow: -12px 13px 15px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -12px 13px 15px 0px rgba(0, 0, 0, 0.75);
+          height: 230px;
+          width: 450px;
+}
+
+#projects .img:hover {
+  opacity: 0.65;
+}
+
+
+#me {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.89)), to(rgba(117, 11, 100, 0.664)));
+  background-image: linear-gradient(rgba(180, 180, 180, 0.89), rgba(117, 11, 100, 0.664));
+  background-size: cover;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#me #profile {
+  width: 30%;
+}
+
+#me #profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#me #about {
+  width: 60%;
+  text-align: center;
+}
+
+#me #about h2 {
+  padding-bottom: 10px;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+#me #about p {
+  font-size: 26px;
+  text-align: justify;
+  padding: 30px;
+  border-top: 4px solid rgba(255, 255, 255, 0.548);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.548);
+}
+
+#quote {
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../images/quote1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#quote h1 {
+  padding: 20px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 70px;
+}
+
+#quote h2 {
+  font-size: 50px;
+}
+
+
+#footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#000000));
+  background-image: linear-gradient(#262626, #000000);
+  font-size: 28px;
+  padding: 20px 0px;
+  width: 100%;
+  color: #abc0c0;
+  text-decoration: none;
+  text-align: center;
+}
+
+#footer a {
+  color: #abc0c0;
+  text-decoration: none;
+}
+
+#footer .fa {
+  padding: 19px;
+  font-size: 35px;
+}
+
+#footer .fa:hover {
+  color: #633c56;
+}
+
+#footer .fa fa-envelope {
+  padding: 0px;
+}
+
+#footer li {
+  display: inline-block;
+}
+#cv{
+	padding: 20px;
+	background-color: rgb(255, 255, 255);
+	font-size: 30px;
+	color: rgb(63, 59, 65);
+	border: none;
+  border-radius: 25px;
+	
+}
+#cv a{
+  color: #924a89;
+  transition-duration: 0.4s;
+  text-decoration:none;
+}
+#cv:hover{
+  color: #ffffff;
+  background-color: #dad8d8;
+}
+/*# sourceMappingURL=ses.css.map */

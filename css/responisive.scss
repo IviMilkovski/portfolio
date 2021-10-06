@@ -1,0 +1,171 @@
+@media only screen and (max-width: 980px)
+{
+#projects{
+    .picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text{
+        padding-top: 20px;
+    }
+    #textp{
+        text-align: center;
+    }
+}
+#me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+        #profile{
+            width: 50%;
+        }
+        #about{
+            width: 90%;
+        }
+}
+#contact{
+    #cont{
+        width: 70%;
+    }
+}
+}
+@media only screen and (max-width: 780px)
+{
+#header{
+        a{
+            font-size: 26px;
+        }
+    }
+    #slika{
+        #slikaTekst{
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+#projects{
+    #textp{
+        font-size: 30px;
+    }
+}    
+#me{    
+    padding: 40px;
+    #profile{
+        width: 50%;
+            .picture{
+            .text{
+                font-size: 27px;
+            }
+        }
+    }
+    #about{
+        width: 90%;
+        h2{
+            font-size: 31px;
+            padding: 10px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+    }
+#skills{
+    .com{
+     padding: 25px;
+     h3{
+        font-size: 20px;
+     }
+    }
+}
+#quote{
+    h1{
+        font-size: 55px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+#contact{
+    #cont{
+        width: 75%;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    #forma{
+    label{
+        font-size: 23px;
+    }
+}
+}
+#footer{
+    font-size: 23px;
+}
+}
+@media only screen and (max-width: 570px)
+{
+    #header{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        ul{
+            float: left;
+        }
+    }
+    #slika{
+        #slikaTekst{
+        h1{
+            font-size: 60px;
+        }
+        h2{
+            font-size: 33px;
+        }
+    }
+    }
+    #me{
+        padding: 20px;
+        #about{
+            width: 100%;
+            p{
+                font-size: 21px;
+            }
+        }
+    }
+    #projects{
+            .text{
+                font-size: 24px;
+            }
+    }
+    #quote{
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 35px;
+        }
+    }
+    #contact{
+        #cont{
+            width: 82%;
+        }
+        h1{
+            font-size: 33px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        #forma{
+        label{
+            font-size: 20px;
+        }
+    }
+    }
+}
